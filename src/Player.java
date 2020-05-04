@@ -9,10 +9,12 @@ public class Player {
         this.id = id;
     }
 
-//    public void move(int moves) {
-//        square.leave(this);
-//        square = square.moveAndLand(this, moves);
-//        square.enter(this);
-//    }
+    public void setSquare(ISquare square) {
+        this.square = square;
+    }
+
+    public ISquare getPosition() {
+        return square;
+    }
 
 }

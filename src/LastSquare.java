@@ -1,11 +1,10 @@
-
-public class Square implements ISquare {
+public class LastSquare implements ISquare {
 
     private int spotId;
     private Player player;
 
-    public Square(int spotId) {
-        this.spotId = spotId;
+    public LastSquare(int id) {
+        spotId = id;
     }
 
     @Override
@@ -30,6 +29,6 @@ public class Square implements ISquare {
 
     @Override
     public boolean isLastSquare() {
-        return false;
+        return true;
     }
 }

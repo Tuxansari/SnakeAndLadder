@@ -17,8 +17,7 @@ public class DriverClass {
         transformList.add(new Transform(TransformType.LADDER, 30, 55));
         transformList.add(new Transform(TransformType.LADDER, 40, 65));
 
-        SnakeAndLadderBoard board = new SnakeAndLadderBoard(playerList, transformList, 100, 6, 1);
-        GameService snakeAndLadderService = new SnakeAndLadderService(board);
+        Game snakeAndLadderService = new SnakeAndLadderGame(playerList, transformList, 100, 6, 1);
         snakeAndLadderService.start();
 
     }

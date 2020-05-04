@@ -1,11 +1,13 @@
+import java.util.List;
 
-public class Square implements ISquare {
+public class FirstSquare implements ISquare {
 
     private int spotId;
-    private Player player;
+    List<Player> players;
 
-    public Square(int spotId) {
+    public FirstSquare(int spotId, List<Player> playerList){
         this.spotId = spotId;
+        this.players = playerList;
     }
 
     @Override
@@ -15,17 +17,17 @@ public class Square implements ISquare {
 
     @Override
     public void enter(Player player) {
-        this.player = player;
+        players.add(player);
     }
 
     @Override
     public void leave(Player player) {
-        this.player = null;
+        players.remove(player);
     }
 
     @Override
     public boolean isFirstSquare() {
-        return false;
+        return true;
     }
 
     @Override
