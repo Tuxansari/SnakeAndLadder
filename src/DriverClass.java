@@ -19,6 +19,5 @@ public class DriverClass {
 
         Game snakeAndLadderService = new SnakeAndLadderGame(playerList, transformList, 100, 6, 1);
         snakeAndLadderService.start();
-
     }
 }
